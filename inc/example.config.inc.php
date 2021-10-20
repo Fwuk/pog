@@ -7,7 +7,7 @@
 //Use a specific domain for links presented to the user
 //Format: https://your.domain.name/
 // MUST HAVE TAILING /
-define('URL','https://dev.pictshare.net/');
+define('URL','https://spicynoodle.de/');
 
 //define('JPEG_COMPRESSION', 90);
 //define('FFMPEG_BINARY','');
