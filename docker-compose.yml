@@ -4,8 +4,7 @@ services:
   pictshare:
     image: hascheksolutions/pictshare:latest
     ports:
-      - "443:443"
-      - "80"
+      - "80:80"
     volumes:
       - pictshare:/usr/share/nginx/html/data
 volumes:
