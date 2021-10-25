@@ -62,7 +62,19 @@
                             <p>Due to configured restrictions, you are not allowed to upload files at this time</p>
 
                         <?php } else { ?>
-                        <div id="uploadinfo"><button onclick="copyToClipboard('#uploadinfo')">Copy URL</button></div>
+                        <div id="uploadinfo"><button>Copy Link</button>
+
+<script>
+function copyToClipboard(text) {
+var inputc = document.body.appendChild(document.createElement("input"));
+inputc.value = window.location.href;
+inputc.focus();
+inputc.select();
+document.execCommand('copy');
+inputc.parentNode.removeChild(inputc);
+alert("URL Copied.");
+}
+</script></div>
                         <p>
                             <?php 
                                 echo "Max Upload size: ". (int)(ini_get('upload_max_filesize'))."MB / File<br/>";
