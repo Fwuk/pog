@@ -62,16 +62,7 @@
                             <p>Due to configured restrictions, you are not allowed to upload files at this time</p>
 
                         <?php } else { ?>
-                        <div id="uploadinfo"><button class="clipboard"><penis>Copy Url</button><script>var $temp = $("<input>");
-var $url = $(location).attr('href');
-
-$('.clipboard').on('click', function() {
-  $("body").append($temp);
-  $temp.val($url).select();
-  document.execCommand("copy");
-  $temp.remove();
-  $("penis").text("URL copied!");
-})</script></div>
+                        <div id="uploadinfo"></div>
                         <p>
                             <?php 
                                 echo "Max Upload size: ". (int)(ini_get('upload_max_filesize'))."MB / File<br/>";
