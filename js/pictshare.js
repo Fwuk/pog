@@ -28,12 +28,13 @@ $(function() {
         }
       }
   })
-$(function copyToClipboard(text) {
-var inputc = document.body.appendChild(document.createElement("input"));
-inputc.value = window.location.href;
-inputc.focus();
-inputc.select();
-document.execCommand('copy');
-inputc.parentNode.removeChild(inputc);
-alert("URL Copied.");
-}
+var $temp = $("<input>");
+var $url = $(location).attr('href');
+
+$('.clipboard').on('click', function() {
+  $("body").append($temp);
+  $temp.val($url).select();
+  document.execCommand("copy");
+  $temp.remove();
+  $("p").text("URL copied!");
+})
