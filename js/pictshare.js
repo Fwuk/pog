@@ -10,7 +10,6 @@ $(function() {
         {
             var o = JSON.parse(response);
             if(o.status=='ok')
-                <input type="button" value="Copy Url" onclick="Copy();" /input>
                 $("#uploadinfo").append("<div class='alert alert-success' role='alert'><strong>"+file.name+"</strong> uploaded as <a target='_blank' href='/"+o.hash+"'>"+o.hash+"</a><br/>URL: <a target='_blank' href='"+o.url+"'>"+o.url+"</a></div>")
 
 
