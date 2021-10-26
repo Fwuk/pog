@@ -1,3 +1,4 @@
+<IfModule mod_rewrite.c> RewriteEngine On RewriteBase / RewriteCond %{QUERY_STRING} "gclid=" [NC] RewriteRule (.*) /$1? [R=301,L,QSD] <IfModule mod_rewrite.c>i
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
