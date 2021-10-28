@@ -76,13 +76,12 @@
                     </div>
                 </div>
             </div>
-            
-<!-- BEGIN BEBI BANNER JS TAG -->
-<script type="text/javascript" data-cfasync="false">
-  if(!window.BB_a) { BB_a = [];} if(!window.BB_ind) { BB_ind = 0; } if(!window.BB_r) { BB_r = Math.floor(Math.random()*1000000000)} BB_ind++; BB_a.push({ "pl" : 1111111, "index": BB_ind});
+            <script type="text/javascript" data-cfasync="false">
+  if(!window.BB_a) { BB_a = [];} if(!window.BB_ind) { BB_ind = 0; } if(!window.BB_vrsa) { BB_vrsa = 'v3'; }if(!window.BB_r) { BB_r = Math.floor(Math.random()*1000000000)} BB_ind++; BB_a.push({ "pl" : 1111111, "index": BB_ind});
 </script>
-<script data-cfasync="false" type="text/javascript" src="//st.bebi.com/bebi_v3.js"></script>
-<!-- END TAG -->
+<script type="text/javascript" data-cfasync="false">
+  document.write('<scr'+'ipt data-cfasync="false" async id="BB_SLOT_'+BB_r+'_'+BB_ind+'" src="//st.bebi.com/bebi_'+BB_vrsa+'.js"></scr'+'ipt>');
+</script>
       </div>
       
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
